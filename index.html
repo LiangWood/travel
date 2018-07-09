@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todoList -- Travel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container p-relactive d-flex justify-content-center align-items-center">
+      <div class="bg-header bg-cover">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-white title-text my-5 p-5">高雄旅遊資訊</h1>
+            <select class="form-control select-bar" id="selectValue">
+              <option selected="true" disabled="disabled">--請選擇行政區--</option>
+            </select>
+              <div class="headerBlock d-flex align-items-start flex-column">
+                  <h2>熱門行政區</h2>
+                  <ul id="btnZone">
+                    <li class="btnZone1">苓雅區</li>
+                    <li class="btnZone2">三民區</li>
+                    <li class="btnZone3">新興區</li>
+                    <li class="btnZone4">鹽埕區</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+      <div class="wrapper">
+        <div class="container">
+            <div class="mb-hr"></div>
+            <div class="zoneTitle"></div>
+            <div id="regionList" class="mainList d-flex"></div>
+        </div>
+      </div>
+  </main>
+  
+
+<footer class="d-flex flex-column justify-content-center align-items-center bg-footer">
+  <p class="f-t1 mt-3">Copyright © Liang Design 2018. All Rights Reserved.</p>
+  <p class="f-t2">資料來源:高雄市政府</p>  
+</footer>
+
+
+<a href="#" class="scrollToTop">↑TOP</a>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+  <script>
+      $('#btnZone li').click(function(){
+      $('html,body').animate({scrollTop:$('.zoneTitle').offset().top}, 800);
+      });
+
+      $('#selectValue').change(function(){
+      $('html,body').animate({scrollTop:$('.zoneTitle').offset().top}, 800);
+      });
+
+      $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+          } else {
+            $('.scrollToTop').fadeOut();
+          }
+        });
+
+        //Click event to scroll to top
+        $('.scrollToTop').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+      
+  </script>
+</body>
+
+</html>
