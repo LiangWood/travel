@@ -66,10 +66,10 @@ a:hover{
 /* @media */
 @media screen and (max-width: 768px) {
   .mainList .main-block {
-    width: 100%;
+    width: 100%!important;
   }
   .headerBlock {
-    height: 150px;
+    height: 150px!important;
     width: 100%;
   }
   .wrapper {
@@ -77,10 +77,10 @@ a:hover{
     padding-bottom: 100px;
   }
   .headerBlock ul li {
-    margin: 2px;
+    margin: 2px!important;
   }
   .select-bar {
-    width: calc(100% - 20px);
+    width: calc(100% - 20px)!important;
   }
 }
 
