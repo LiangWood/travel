@@ -101,11 +101,11 @@ function regionData(data) {
           </div>
         </div>
         <div class="main-info">
-          <div><img src="icons_clock.png" alt="">${data.Opentime}</div>
-          <div><img src="icons_pin.png" alt="">${data.Add}</div>
+          <div><img src="img/icons_clock.png" alt="">${data.Opentime}</div>
+          <div><img src="img/icons_pin.png" alt="">${data.Add}</div>
           <div class="clearfix">
-            <div class="phone"><img src="icons_phone.png" alt="">${data.Tel}</div>
-            <div class="tag"><img src="icons_tag.png" alt="">${data.Ticketinfo}</div>
+            <div class="phone"><img src="img/icons_phone.png" alt="">${data.Tel}</div>
+            <div class="tag"><img src="img/icons_tag.png" alt="">${data.Ticketinfo}</div>
           </div>
         </div>
     </div>
