@@ -93,7 +93,7 @@ function regionData(data) {
     // console.log(`${data.Name},${data.Zone},${data.Opentime},${data.Add},${data.Tel}`);
     document.getElementById('regionList').innerHTML +=
       `
-    <div class="main-block">
+    <div class="main-block animated flipInX" style="animation-duration:2s;">
         <div class="main-img">
           <div class="main-bg bg-cover d-flex justify-content-start align-items-end p-3" style="background-image:url(${data.Picture1});">
             <div class="name">${data.Name}</div>

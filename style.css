@@ -1,23 +1,3 @@
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-} */
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -29,7 +9,7 @@ padding: 0;
 transition: all 0.3s;
 }
 body {
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 font-size: 100%;
 margin: 0;
 padding: 0;
@@ -70,10 +50,10 @@ a:hover{
   }
   .headerBlock {
     height: 150px!important;
+    top: 20%!important;
     width: 100%;
   }
   .wrapper {
-    padding-top: 200px !important;
     padding-bottom: 100px;
   }
   .headerBlock ul li {
@@ -81,6 +61,9 @@ a:hover{
   }
   .select-bar {
     width: calc(100% - 20px)!important;
+  }
+  .mb-hr{
+    margin-top: 60px;
   }
 }
 
@@ -113,7 +96,6 @@ a:hover{
 }
 .form-control{
   background: rgba(255, 255, 255, 0.70);
-  border: 3px solid #FFFFFF;
   border-radius: 3px;
 }
 .headerBlock{
@@ -135,7 +117,6 @@ a:hover{
 }
 .headerBlock ul{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .headerBlock ul li{
@@ -171,7 +152,7 @@ a:hover{
   content: " ";
   position: absolute;
   margin-top: -10px;
-  background-image: url(icons_down.png);
+  background-image: url(./img/icons_down.png);
   background-position: 50% 50%;
   height: 24px;
   width: 24px;
@@ -185,8 +166,9 @@ a:hover{
   flex-flow: wrap;
 }
 .mainList .main-block{
+  min-height: 380px;
   overflow: hidden;
-  margin: 5px 10px;
+  margin: 10px 10px;
   width: calc(50% - 20px);
   box-sizing: border-box;
   background: #FFFFFF;
@@ -242,7 +224,7 @@ a:hover{
 .bg-footer{
   height: 90px;
   width: 100%;
-  background: #559AC8;
+  background: #333;
 }
 .bg-footer .f-t1{
   font-family: AppleSystemUIFont;
