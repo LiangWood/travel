@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <!-- custom css -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- animate css -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <!-- google font -->
@@ -18,53 +18,54 @@
 </head>
 
 <body>
-  <div class="bg-overlay" style="background-color: rgba(0, 0, 0, .7);">
-  <!-- header -->
-  <header>
-    <div class="container-fluid p-relactive d-flex align-items-center">
-      <div class="bg-header bg-cover bg-block">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 class="text-white title-text my-5 py-5 animated swing" style="animation-iteration-count: 6">Travel Kaohsiung Web</h1>
-            <select class="form-control select-bar" id="selectValue">
-              <option selected="true" disabled="disabled">--請選擇行政區--</option>
-            </select>
-              <div class="headerBlock d-flex align-items-start flex-column">
-                  <h2>熱門行政區</h2>
-                  <ul id="btnZone">
-                    <li class="btnZone1 animated fadeInLeft" style="animation-duration: 1s">苓雅區</li>
-                    <li class="btnZone2 animated fadeInLeft" style="animation-duration: 2s">三民區</li>
-                    <li class="btnZone3 animated fadeInLeft" style="animation-duration: 3s">新興區</li>
-                    <li class="btnZone4 animated fadeInLeft" style="animation-duration: 4s">前鎮區</li>
-                  </ul>
+
+
+      <div class="bg-overlay" style="background-color: rgba(0, 0, 0, .7);">
+      <!-- header -->
+      <header>
+        <div class="container-fluid p-relactive d-flex align-items-center">
+          <div class="bg-header bg-cover bg-block">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 class="text-white title-text my-5 py-5 animated swing" style="animation-iteration-count: 6">Travel Kaohsiung Web</h1>
+                <select class="form-control select-bar" id="selectValue">
+                  <option selected="true" disabled="disabled">--請選擇行政區--</option>
+                </select>
+                  <div class="headerBlock d-flex align-items-start flex-column">
+                      <h2>熱門行政區</h2>
+                      <ul id="btnZone">
+                        <li class="btnZone1 animated fadeInLeft" style="animation-duration: 1s">苓雅區</li>
+                        <li class="btnZone2 animated fadeInLeft" style="animation-duration: 2s">三民區</li>
+                        <li class="btnZone3 animated fadeInLeft" style="animation-duration: 3s">新興區</li>
+                        <li class="btnZone4 animated fadeInLeft" style="animation-duration: 4s">前鎮區</li>
+                      </ul>
+                  </div>
               </div>
+            </div>
           </div>
         </div>
+      </header>
+
+      <!-- main -->
+      <main>
+          <div class="wrapper">
+            <div class="container">
+                <div class="mb-hr"></div>
+                <div class="zoneTitle"></div>
+                <div id="regionList" class="mainList d-flex align-items-center"></div>
+            </div>
+          </div>
+      </main>
       </div>
-    </div>
-  </header>
+      
+    <!-- footer -->
+    <footer class="d-flex flex-column justify-content-center align-items-center bg-footer text-center">
+      <p class="f-t1 mt-3">Copyright © Liang Design 2018. All Rights Reserved.</p>
+      <p class="f-t2">資料來源:高雄市政府</p>  
+    </footer>
 
-  <!-- main -->
-  <main>
-      <div class="wrapper">
-        <div class="container">
-            <div class="mb-hr"></div>
-            <div class="zoneTitle"></div>
-            <div id="regionList" class="mainList d-flex align-items-center"></div>
-        </div>
-      </div>
-  </main>
-  </div>
-  
-<!-- footer -->
-<footer class="d-flex flex-column justify-content-center align-items-center bg-footer text-center">
-  <p class="f-t1 mt-3">Copyright © Liang Design 2018. All Rights Reserved.</p>
-  <p class="f-t2">資料來源:高雄市政府</p>  
-</footer>
-
-<!-- go to top -->
-<a href="#" class="scrollToTop animated bounce" style="animation-duratin: 0.3s;animation-iteration-count: infinite;">↑TOP</a>
-
+    <!-- go to top -->
+    <a href="#" class="scrollToTop animated bounce" style="animation-duratin: 0.3s;animation-iteration-count: infinite;">↑TOP</a>
 
 
   <!-- jQuery v3.3.1 -->
@@ -74,7 +75,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <!-- custom js -->
-  <script src="all.js"></script>
+  <script src="./js/all.js"></script>
   <script>
       $('#btnZone li').click(function(){
       $('html,body').animate({scrollTop:$('.zoneTitle').offset().top}, 800);
