@@ -9,6 +9,8 @@ padding: 0;
 transition: all 0.3s;
 }
 body {
+background-size: cover;
+background-image: url('https://images.pexels.com/photos/731229/pexels-photo-731229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 font-family: 'Poppins', sans-serif;
 font-size: 100%;
 margin: 0;
@@ -41,6 +43,14 @@ a {
 a:hover{
   color:#000000;
 }
+
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* reset css。 */
 
 /* @media */
@@ -66,7 +76,12 @@ a:hover{
     margin-top: 60px;
   }
 }
-
+.bg-overlay {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 .p-relactive{
   position: relative;
 }
@@ -116,6 +131,7 @@ a:hover{
   color: #000000;
 }
 .headerBlock ul{
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -217,10 +233,11 @@ a:hover{
 .wrapper .zoneTitle {
   font-family: SFNSDisplay;
   font-size: 36px;
-  color: #8A82CC;
+  color: #fff;
   text-align: center;
   margin: 0 auto;
   padding-top: 50px; 
+  padding-bottom: 50px;
 }
 .bg-footer{
   height: 90px;

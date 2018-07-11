@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+  <div class="bg-overlay" style="background-color: rgba(0, 0, 0, .7);">
   <!-- header -->
   <header>
     <div class="container-fluid p-relactive d-flex align-items-center">
@@ -54,6 +54,7 @@
         </div>
       </div>
   </main>
+  </div>
   
 <!-- footer -->
 <footer class="d-flex flex-column justify-content-center align-items-center bg-footer text-center">
@@ -95,7 +96,7 @@
 
         //Click event to scroll to top
         $('.scrollToTop').click(function () {
-          $('html, body').animate({ scrollTop: 0 }, 800);
+          $('html, body').animate({ scrollTop: 0}, 800);
           return false;
         });
         
